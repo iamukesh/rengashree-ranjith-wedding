@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#7d1731" />
+  <meta name="description" content="Wedding invitation website" />
+  <title>திருமண விழா | Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Tamil:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="music-pill" id="musicToggle" aria-label="Toggle music">♫ <span>Music</span></div>
+  <audio id="bgMusic" loop preload="none"></audio>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="mandala mandala-a"></div><div class="mandala mandala-b"></div>
+      <div class="hero-content reveal">
+        <div class="ornament">❧ ✦ ❧</div>
+        <p class="eyebrow">WITH BLESSINGS &amp; LOVE</p>
+        <p class="tamil-small">திருமண விழா</p>
+        <h1><span>Dr. V. Rengashree</span><i>&amp;</i><span>Dr. R. Ranjith</span></h1>
+        <p class="subtitle">Two hearts · One beautiful beginning</p>
+        <div class="date-badge"><span>NOVEMBER</span><strong>15</strong><span>2026</span></div>
+        <button class="gold-btn" onclick="document.getElementById('invitation').scrollIntoView({behavior:'smooth'})">Open Invitation <span>↓</span></button>
+      </div>
+      <div class="scroll-cue">SCROLL <span>↓</span></div>
+    </section>
+
+    <section class="intro section" id="invitation">
+      <div class="container narrow reveal">
+        <div class="section-symbol">❈</div>
+        <p class="eyebrow">A NEW CHAPTER BEGINS</p>
+        <h2>அன்புடன் அழைக்கிறோம்</h2>
+        <p class="lead">தாங்கள் தங்கள் குடும்பத்துடன் வருகை தந்து, எங்கள் திருமண விழாவை சிறப்பித்து மணமக்களை வாழ்த்துமாறு அன்புடன் கேட்டுக்கொள்கிறோம்.</p>
+        <div class="names-line"><span>Rengashree</span><b>♡</b><span>Ranjith</span></div>
+      </div>
+    </section>
+
+    <section class="countdown section-dark">
+      <div class="container reveal">
+        <p class="eyebrow">COUNTING THE MOMENTS</p>
+        <h2>Our forever starts in</h2>
+        <div class="timer" id="timer">
+          <div><strong id="days">00</strong><span>DAYS</span></div><i>:</i>
+          <div><strong id="hours">00</strong><span>HOURS</span></div><i>:</i>
+          <div><strong id="minutes">00</strong><span>MINUTES</span></div><i>:</i>
+          <div><strong id="seconds">00</strong><span>SECONDS</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="events section" id="events">
+      <div class="container">
+        <div class="center reveal"><p class="eyebrow">SAVE THE DATE</p><h2>திருமண நிகழ்வுகள்</h2></div>
+        <div class="event-grid">
+          <article class="event-card reveal">
+            <div class="event-icon">✦</div><p class="event-label">RECEPTION</p><h3>வரவேற்பு</h3>
+            <p class="event-date">14 NOVEMBER 2026</p><p class="event-time">மாலை 7.00 - 9.30 மணி</p>
+            <p class="venue">Venue details<br><small>See venue map link</small></p>
+            <a class="text-link" href="https://share.google/7gsOycX2o3ELeMeuy" target="_blank" rel="noopener">Get Directions ↗</a>
+          </article>
+          <article class="event-card featured reveal">
+            <div class="event-icon">♡</div><p class="event-label">WEDDING</p><h3>திருமணம்</h3>
+            <p class="event-date">15 NOVEMBER 2026</p><p class="event-time">முகூர்த்தம் நேரம்: காலை 9 - 10.30 மணி</p>
+            <p class="venue">Venue details<br><small>See venue map link</small></p>
+            <a class="text-link" href="https://share.google/7gsOycX2o3ELeMeuy" target="_blank" rel="noopener">Get Directions ↗</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote section-dark">
+      <div class="container narrow center reveal">
+        <div class="quote-mark">“</div>
+        <p>இரு மனங்கள் இணைந்து,<br/>ஒரு வாழ்வாகும் இனிய தருணம்.</p>
+        <span>— With love, the families</span>
+      </div>
+    </section>
+
+    <section class="gallery section" id="gallery">
+      <div class="container">
+        <div class="center reveal"><p class="eyebrow">OUR MEMORIES</p><h2>நினைவுகள்</h2></div>
+        <div class="gallery-grid">
+          <div class="photo p1 reveal"><span>Our Story</span></div><div class="photo p2 reveal"></div><div class="photo p3 reveal"></div>
+          <div class="photo p4 reveal"></div><div class="photo p5 reveal"><span>Forever</span></div><div class="photo p6 reveal"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="families section-soft">
+      <div class="container">
+        <div class="center reveal"><p class="eyebrow">WITH THE BLESSINGS OF</p><h2>இரு குடும்பங்கள்</h2></div>
+        <div class="family-grid reveal">
+          <div><p class="eyebrow">BRIDE'S FAMILY</p><h3>ரெங்கரீ குடும்பத்தினர்</h3><p>அன்பும் ஆசீர்வாதமும் வழங்கும் குடும்பத்தினர்</p></div>
+          <div><p class="eyebrow">GROOM'S FAMILY</p><h3>ரஞ்சித் குடும்பத்தினர்</h3><p>அன்பும் ஆசீர்வாதமும் வழங்கும் குடும்பத்தினர்</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="rsvp section" id="rsvp">
+      <div class="container narrow center reveal">
+        <p class="eyebrow">WE'D LOVE TO SEE YOU</p><h2>RSVP</h2>
+        <p class="lead">உங்கள் வருகையை உறுதி செய்து எங்களுடன் இந்த மகிழ்ச்சியான நாளை கொண்டாடுங்கள்.</p>
+        <form id="rsvpForm" class="rsvp-form">
+          <input required name="name" placeholder="Your name" />
+          <select name="attendance"><option value="yes">Joyfully attending</option><option value="no">Unable to attend</option></select>
+          <input name="guests" type="number" min="1" max="10" value="1" placeholder="Guests" />
+          <textarea name="message" rows="3" placeholder="A little message (optional)"></textarea>
+          <button class="gold-btn" type="submit">Send RSVP ♡</button>
+        </form>
+        <p id="formMessage" class="form-message"></p>
+      </div>
+    </section>
+
+    <footer class="footer section-dark">
+      <div class="container center"><div class="ornament">❧ ✦ ❧</div><h2>ரெங்கரீ &amp; ரஞ்சித்</h2><p>With love, laughter &amp; happily ever after.</p><small>15 · 11 · 2026</small></div>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
