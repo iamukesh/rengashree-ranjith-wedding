@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RSVP — Ranjith &amp; Rengashree Wedding</title>
+  <meta name="description" content="Kindly confirm your attendance for the wedding of Dr. R. Ranjith & Dr. V. Rengashree, 15 November 2026." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="rsvp">
+
+  <div id="scrollBar"></div>
+  <canvas id="heartCanvas"></canvas>
+  
+  <div class="parallax-layer" id="parallaxLayer"></div>
+  <div class="v-strip v-left" aria-hidden="true"></div>
+  <div class="v-strip v-right" aria-hidden="true"></div>
+
+  <nav class="navbar" id="navbar">
+    <a class="nav-brand" href="index.html">Ranjith <span>&amp;</span> Rengashree</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="rsvp.html" class="active">RSVP</a></li>
+      <li><a href="venue.html">Venue</a></li>
+    </ul>
+  </nav>
+
+  <header class="page-hero">
+    <div class="ornament">&#9993;</div>
+    <h1>RSVP</h1>
+    <p class="lead">Your presence is the greatest gift of all. Kindly let us know you can join us!</p>
+  </header>
+  <div class="breadcrumb-wrap">
+    <span class="breadcrumb"><a href="index.html">Home</a> &middot; RSVP</span>
+  </div>
+
+  <section class="section alt" style="min-height:72vh;">
+    <div class="container narrow">
+      <div class="section-label">Kindly respond</div>
+      <h2 class="section-title">Will You Join Us?</h2>
+      <div class="divider"><span class="divider-line"></span><span class="divider-ornament">&#9829;</span><span class="divider-line"></span></div>
+
+      <div class="rsvp-card">
+        <form id="rsvpForm" novalidate>
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="e.g. Arivu &amp; Meena" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email (optional)</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" />
+          </div>
+
+          <div class="form-group">
+            <label>Will you be attending?</label>
+            <div class="radio-row">
+              <label class="radio-choice">
+                <input type="radio" name="attending" value="yes" checked />
+                &#10004; Joyfully accept
+              </label>
+              <label class="radio-choice">
+                <input type="radio" name="attending" value="no" />
+                &#128575; Regretfully decline
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group" id="guestsGroup">
+            <label for="guests">Number of guests</label>
+            <select id="guests" name="guests">
+              <option value="1" selected>1 Guest</option>
+              <option value="2">2 Guests</option>
+              <option value="3">3 Guests</option>
+              <option value="4">4 Guests</option>
+              <option value="5+">5 or more</option>
+            </select>
+          </div>
+
+          <div class="form-group" id="eventsGroup">
+            <label>Which events will you attend?</label>
+            <div class="radio-row">
+              <label class="radio-choice">
+                <input type="radio" name="event" value="both" checked />
+                Both days
+              </label>
+              <label class="radio-choice">
+                <input type="radio" name="event" value="reception" />
+                Reception only
+              </label>
+              <label class="radio-choice">
+                <input type="radio" name="event" value="wedding" />
+                Wedding only
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">A message for the couple</label>
+            <textarea id="message" name="message" placeholder="Share your wishes and blessings..."></textarea>
+          </div>
+
+          <div style="text-align:center;">
+            <button type="submit" class="btn btn-primary" style="width:100%;">Send RSVP</button>
+          </div>
+        </form>
+
+        <div class="rsvp-success" id="rsvpSuccess">
+          <div class="check">&#10003;</div>
+          <h3>Thank You!</h3>
+          <p>Your response has been recorded. We can't wait to celebrate with you!<br />If you need to change anything, just contact us.</p>
+        </div>
+      </div>
+
+      <div class="note-box" style="margin-top:32px;">
+        <h4>Questions?</h4>
+        <p>Reach out to the families for any help &mdash; they will be delighted to assist you with travel, stay and directions.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-script">Ranjith &amp; Rengashree</div>
+    <div class="footer-sub">Together with their families &middot; 15 November 2026</div>
+    <div class="footer-hearts">&#9829; &#9829; &#9829;</div>
+  </footer>
+
+  <div class="music-bar" id="musicBar">
+    <div class="music-disc">&#127925;</div>
+    <div class="music-info">
+      <span class="music-title">Ullam Paadum</span>
+      <span class="music-artist">Wedding Melody</span>
+    </div>
+    <div class="music-wave">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <button class="music-btn" id="musicBtn" aria-label="Toggle music">&#9654;</button>
+    <audio id="bgMusic" loop preload="auto" src="assets/Ullam-Paadum.mp3"></audio>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

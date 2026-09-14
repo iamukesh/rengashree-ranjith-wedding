@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ranjith &amp; Rengashree — Wedding Invitation</title>
+  <meta name="description" content="Join us in celebrating the wedding of Dr. R. Ranjith & Dr. V. Rengashree — 14 &amp; 15 November 2026, Tamil Arasi Mahal, Thanjavur." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Great+Vibes&family=Italiana&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/intro.css" />
+</head>
+<body data-page="home">
+
+  <div id="scrollBar"></div>
+  <canvas id="heartCanvas"></canvas>
+  
+  <div class="parallax-layer" id="parallaxLayer"></div>
+  <div class="v-strip v-left" aria-hidden="true"></div>
+  <div class="v-strip v-right" aria-hidden="true"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar bare-nav" id="navbar">
+    <a class="nav-brand" href="index.html">Ranjith <span>&amp;</span> Rengashree</a>
+  </nav>
+
+  <!-- ═══ CARD ENTRY ═══ -->
+  <div class="intro-card" id="introCard">
+    <picture>
+      <source media="(max-width: 600px)" srcset="assets/clean-ref-mobile.png" />
+      <img class="card-bg" src="assets/clean-ref.png" alt="" />
+    </picture>
+
+    <div class="card-words">
+      <p class="wk-kicker">Wedding Invitation</p>
+
+      <div class="idol-row">
+        <img class="idol" src="assets/idols.png" alt="" />
+      </div>
+
+      <h1 class="wk-title">
+        <span class="l1">Two Hearts.</span>
+        <span class="l2">One Journey.</span>
+      </h1>
+      <p class="wk-sub">A Grand Wedding Celebration Awaits.</p>
+    </div>
+
+    <div class="card-cta">
+      <button class="btn join-btn" id="joinBtn">
+        <span class="jb-label">Join the Celebration</span>
+        <span class="jb-dots" aria-hidden="true"><span></span><span></span><span></span></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- HOME MAIN -->
+  <main class="home-main" id="main">
+
+    <section class="hero">
+      <div class="petal-ring"></div><div class="petal-ring"></div><div class="petal-ring"></div>
+      <div class="invite-tag">&#10084; Wedding Invitation &#10084;</div>
+      <div class="hero-ornament">&#10047;</div>
+      <h1 class="hero-names">
+        <span class="nm nm1">Dr Ranjith</span>
+        <img class="sev" src="assets/RR_logo.png" alt="Ranjith &amp; Rengashree monogram" />
+        <span class="nm nm2">Dr Rengashree</span>
+      </h1>
+      <div class="hero-subtitle">Are getting married</div>
+
+      <div class="hero-actions">
+        <a class="save-date-btn" href="https://www.google.com/calendar/render?action=TEMPLATE&amp;text=Ranjith+%26+Rengashree+Wedding&amp;dates=20261114T130000Z%2F20261115T050000Z&amp;details=Reception%3A+14+Nov+2026+6%3A30+PM+onwards%0AMuhurtham%3A+15+Nov+2026+10%3A20+AM&amp;location=Tamil+Arasi+Mahal%2C+Pudukkottai+Rd%2C+Parisutham+Nagar%2C+Thanjavur+613007&amp;sf=true&amp;output=xml" target="_blank" rel="noopener"><span>&#128198; Save the Date</span></a>
+      </div>
+
+      <div class="date-badge">
+        <div class="date-day">14 &amp; 15 November 2026</div>
+        <div class="date-time">Reception : 14th November 6:30 PM</div>
+        <div class="date-time">Marriage : 15th November 10:30 AM</div>
+      </div>
+
+      <div class="countdown-wrapper" id="countdown"></div>
+      <div class="hero-location">&#128205; Tamil Arasi Mahal, Thanjavur</div>
+    </section>
+
+    <section class="section alt">
+      <div class="container narrow">
+        <div class="section-label">Together with their families</div>
+        <h2 class="section-title">Our Invitation</h2>
+        <div class="divider"><span class="divider-line"></span><span class="divider-ornament">&#10087;</span><span class="divider-line"></span></div>
+        <p class="section-text">
+          With the grace of the Almighty and the blessings of our beloved parents and elders,
+          we cordially invite you to celebrate the wedding of our children and to shower your
+          love and good wishes upon the happy couple. Your presence will make this occasion
+          truly special.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+    <!-- KURUNTHOKAI -->
+    <section class="kural-section">
+      <div class="kural-box reveal" id="kuralBox">
+        <div class="kural-label">&#10022; குறுந்தொகை &#8226; Kurunthokai &#10022;</div>
+        <div class="kural-flipper" id="kuralFlipper">
+          <div class="kural-front">
+            <div class="kural-text" id="kuralText"></div>
+          </div>
+          <div class="kural-back">
+            <div class="kural-meaning" id="kuralMeaning"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <div class="container narrow">
+        <div class="section-label">Together Forever</div>
+        <h2 class="section-title">Ranjith &amp; Rengashree</h2>
+        <div class="divider"><span class="divider-line"></span><span class="divider-ornament">&#9829;</span><span class="divider-line"></span></div>
+        <p class="section-text" style="max-width:620px;margin:0 auto 40px;">
+          Two doctors, two hearts, one beautiful beginning. As they step onto this new journey
+          together, we warmly invite you to be part of their celebration.
+        </p>
+        <div class="reveal couple-portrait">
+          <img src="assets/couples.png" alt="Ranjith &amp; Rengashree" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="venue">
+      <div class="container">
+        <div class="section-label">Venue</div>
+        <h2 class="section-title">Find Us Here</h2>
+        <div class="divider"><span class="divider-line"></span><span class="divider-ornament">&#10087;</span><span class="divider-line"></span></div>
+        <div class="map-container reveal">
+          <iframe
+            title="Tamil Arasi Mahal location map"
+            src="https://maps.google.com/maps?q=Tamil%20Arasi%20Mahal%2C%20Pudukkottai%20Rd%2C%20Parisutham%20Nagar%2C%20Thanjavur%2C%20Tamil%20Nadu%20613007&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="venue-address reveal">
+          Tamil Arasi Mahal,<br />Pudukkottai Rd, Parisutham Nagar,<br />Thanjavur, Tamil Nadu 613007
+          <p class="venue-welcome">We'd be honoured to welcome you</p>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Tamil+Arasi+Mahal+Pudukkottai+Rd+Parisutham+Nagar+Thanjavur+613007" target="_blank" rel="noopener">Get Directions &#8599;</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-script">Ranjith &amp; Rengashree</div>
+      <div class="footer-sub">Together Forever &middot; 14 &amp; 15 November 2026</div>
+      <div class="footer-hearts">&#9829; &#9829; &#9829;</div>
+    </footer>
+  </main>
+
+  <!-- MUSIC BAR -->
+  <div class="music-bar" id="musicBar">
+    <div class="music-disc">&#127925;</div>
+    <div class="music-info">
+      <span class="music-title">Ullam Paadum</span>
+      <span class="music-artist">Wedding Melody</span>
+    </div>
+    <div class="music-wave">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <button class="music-btn" id="musicBtn" aria-label="Toggle music">&#9654;</button>
+    <audio id="bgMusic" loop preload="auto" src="assets/Ullam-Paadum.mp3"></audio>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

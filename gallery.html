@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery — Ranjith &amp; Rengashree Wedding</title>
+  <meta name="description" content="Photo gallery for the wedding of Dr. R. Ranjith & Dr. V. Rengashree, November 2026." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .g-item svg { width: 100%; height: 100%; }
+    .g-item .ph-text {
+      font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-style: italic; fill: #7a4a4a;
+    }
+    .g-item .ph-icon { font-family: 'Great Vibes', cursive; font-size: 2.3rem; fill: #c1121f; }
+  </style>
+</head>
+<body data-page="gallery">
+
+  <div id="scrollBar"></div>
+  <canvas id="heartCanvas"></canvas>
+  
+  <div class="parallax-layer" id="parallaxLayer"></div>
+  <div class="v-strip v-left" aria-hidden="true"></div>
+  <div class="v-strip v-right" aria-hidden="true"></div>
+
+  <nav class="navbar" id="navbar">
+    <a class="nav-brand" href="index.html">Ranjith <span>&amp;</span> Rengashree</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="rsvp.html">RSVP</a></li>
+      <li><a href="venue.html">Venue</a></li>
+    </ul>
+  </nav>
+
+  <header class="page-hero">
+    <div class="ornament">&#10047;</div>
+    <h1>Gallery</h1>
+    <p class="lead">A few precious memories from our journey &mdash; more to come after the big day!</p>
+  </header>
+  <div class="breadcrumb-wrap">
+    <span class="breadcrumb"><a href="index.html">Home</a> &middot; Gallery</span>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-label">Our memories</div>
+      <h2 class="section-title">Moments Together</h2>
+      <div class="divider"><span class="divider-line"></span><span class="divider-ornament">&#9829;</span><span class="divider-line"></span></div>
+      <p class="section-text">
+        Click any photo to view it. To add your own photos, replace the SVG placeholders
+        with an image inside each card.
+      </p>
+
+      <div class="gallery-grid">
+        <div class="g-item reveal" data-caption="Engagement">
+          <svg viewBox="0 0 300 400">
+            <defs>
+              <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#fdecec"/><stop offset="1" stop-color="#f8d9d9"/>
+              </linearGradient>
+            </defs>
+            <rect width="300" height="400" fill="url(#g1)"/>
+            <text x="150" y="200" text-anchor="middle" class="ph-icon">R &amp; R</text>
+            <text x="150" y="232" text-anchor="middle" class="ph-text">Your engagement photo here</text>
+          </svg>
+          <div class="g-cap"><span>Engagement</span>R &amp; R</div>
+        </div>
+
+        <div class="g-item reveal" data-caption="Haldi">
+          <svg viewBox="0 0 300 400">
+            <defs>
+              <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#fdf3d8"/><stop offset="1" stop-color="#f7e6b8"/>
+              </linearGradient>
+            </defs>
+            <rect width="300" height="400" fill="url(#g2)"/>
+            <text x="150" y="200" text-anchor="middle" class="ph-icon">R &amp; R</text>
+            <text x="150" y="232" text-anchor="middle" class="ph-text">Haldi ceremony photo here</text>
+          </svg>
+          <div class="g-cap"><span>Haldi</span>R &amp; R</div>
+        </div>
+
+        <div class="g-item reveal" data-caption="Pre-wedding">
+          <svg viewBox="0 0 300 400">
+            <defs>
+              <linearGradient id="g3" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#fdecec"/><stop offset="1" stop-color="#ffd2d2"/>
+              </linearGradient>
+            </defs>
+            <rect width="300" height="400" fill="url(#g3)"/>
+            <text x="150" y="200" text-anchor="middle" class="ph-icon">&#9829;</text>
+            <text x="150" y="232" text-anchor="middle" class="ph-text">Pre-wedding photo here</text>
+          </svg>
+          <div class="g-cap"><span>Pre-wedding</span>R &amp; R</div>
+        </div>
+
+        <div class="g-item reveal" data-caption="Mehendi">
+          <svg viewBox="0 0 300 400">
+            <defs>
+              <linearGradient id="g4" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#f3ffe8"/><stop offset="1" stop-color="#dff3cc"/>
+              </linearGradient>
+            </defs>
+            <rect width="300" height="400" fill="url(#g4)"/>
+            <text x="150" y="200" text-anchor="middle" class="ph-icon">&#10047;</text>
+            <text x="150" y="232" text-anchor="middle" class="ph-text">Mehendi photo here</text>
+          </svg>
+          <div class="g-cap"><span>Mehendi</span>R &amp; R</div>
+        </div>
+
+        <div class="g-item reveal" data-caption="Family">
+          <svg viewBox="0 0 300 400">
+            <defs>
+              <linearGradient id="g5" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#fdf0f0"/><stop offset="1" stop-color="#fadcdc"/>
+              </linearGradient>
+            </defs>
+            <rect width="300" height="400" fill="url(#g5)"/>
+            <text x="150" y="200" text-anchor="middle" class="ph-icon">&#9825;</text>
+            <text x="150" y="232" text-anchor="middle" class="ph-text">A family photo here</text>
+          </svg>
+          <div class="g-cap"><span>Family</span>R &amp; R</div>
+        </div>
+
+        <div class="g-item reveal" data-caption="Wedding Day">
+          <svg viewBox="0 0 300 400">
+            <defs>
+              <linearGradient id="g6" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#f7ead0"/><stop offset="1" stop-color="#eddaa8"/>
+              </linearGradient>
+            </defs>
+            <rect width="300" height="400" fill="url(#g6)"/>
+            <text x="150" y="200" text-anchor="middle" class="ph-icon">&#10087;</text>
+            <text x="150" y="232" text-anchor="middle" class="ph-text">Wedding day photo here</text>
+          </svg>
+          <div class="g-cap"><span>Wedding Day</span>R &amp; R</div>
+        </div>
+
+        <div class="g-item reveal" data-caption="Friends">
+          <svg viewBox="0 0 300 400">
+            <defs>
+              <linearGradient id="g7" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#fff1f1"/><stop offset="1" stop-color="#fce0e0"/>
+              </linearGradient>
+            </defs>
+            <rect width="300" height="400" fill="url(#g7)"/>
+            <text x="150" y="200" text-anchor="middle" class="ph-icon">&#10084;</text>
+            <text x="150" y="232" text-anchor="middle" class="ph-text">Friends photo here</text>
+          </svg>
+          <div class="g-cap"><span>Friends</span>R &amp; R</div>
+        </div>
+
+        <div class="g-item reveal" data-caption="Thank You">
+          <svg viewBox="0 0 300 400">
+            <defs>
+              <linearGradient id="g8" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#fdecec"/><stop offset="1" stop-color="#c1121f"/>
+              </linearGradient>
+            </defs>
+            <rect width="300" height="400" fill="url(#g8)"/>
+            <text x="150" y="195" text-anchor="middle" style="font-family:'Great Vibes',cursive;font-size:2.6rem;fill:#fff;">Thank You</text>
+            <text x="150" y="228" text-anchor="middle" style="font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-style:italic;fill:#fff;">for being part of our story</text>
+          </svg>
+          <div class="g-cap"><span>Thank You</span>R &amp; R</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-script">Ranjith &amp; Rengashree</div>
+    <div class="footer-sub">Together with their families &middot; 15 November 2026</div>
+    <div class="footer-hearts">&#9829; &#9829; &#9829;</div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lb-btn lb-close" id="lbClose" aria-label="Close">&times;</button>
+    <button class="lb-btn lb-prev" id="lbPrev" aria-label="Previous">&#8249;</button>
+    <div class="lightbox-figure"></div>
+    <button class="lb-btn lb-next" id="lbNext" aria-label="Next">&#8250;</button>
+  </div>
+
+  <div class="music-bar" id="musicBar">
+    <div class="music-disc">&#127925;</div>
+    <div class="music-info">
+      <span class="music-title">Ullam Paadum</span>
+      <span class="music-artist">Wedding Melody</span>
+    </div>
+    <div class="music-wave">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <button class="music-btn" id="musicBtn" aria-label="Toggle music">&#9654;</button>
+    <audio id="bgMusic" loop preload="auto" src="assets/Ullam-Paadum.mp3"></audio>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
